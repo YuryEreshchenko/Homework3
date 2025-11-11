@@ -1,3 +1,22 @@
+/*
+  RGB LED Blinking Speed Controller
+  
+  Controls a common-anode RGB LED using a single push button.
+  Each button press cycles through multiple blinking speeds.
+
+  - Short or long press: changes mode
+
+  Modes:
+    1 → Constant ON
+    2 → Slow blink
+    3 → Medium blink
+    4 → Fast blink
+
+  Author: Yury Erehshcenko
+  Date: 12/11/2025
+*/
+
+
 const int RedLEDPin   = 9;
 const int GreenLEDPin = 10;
 const int BlueLEDPin  = 11;
@@ -70,7 +89,8 @@ int checkButton() {
     if (currentTime - pressingTime < longPressInterval) {
       Serial.println("Short click");
       clickType = 1;
-    } else {
+    } 
+    else {
       Serial.println("Long Press");
       clickType = 1;
     }
@@ -94,7 +114,8 @@ void Blinking(int interval) {
     if (blinkOn) {
       // Inverted LED: 0 = ON
       PowerLEDControl(0, 0, 0);
-    } else {
+    } 
+    else {
       // Inverted LED: 255 = OFF
       PowerLEDControl(255, 255, 255);
     }

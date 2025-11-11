@@ -1,3 +1,15 @@
+/*
+  Basic RGB LED Button Control
+  ----------------------------
+  This program turns an RGB LED ON or OFF using a single push button.
+
+  - When the button is pressed, the LED turns ON.
+  - When released, the LED turns OFF.
+  - Button state is printed to the Serial Monitor for debugging.
+
+  Author: Yury Ereshchenko
+  Date: 12/11/2025
+*/
 const int RedLEDPin = 9;
 const int GreenLEDPin = 10;
 const int BlueLEDPin = 11;
