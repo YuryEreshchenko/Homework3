@@ -17,7 +17,7 @@ Each button press changes the LED’s blinking speed or turns it on constantly.
 | 1 | **Constant ON** | LED stays lit continuously |
 | 2 | **Slow Blink** | LED blinks once every second |
 | 3 | **Medium Blink** | LED blinks twice per second |
-| 4 | **Fast Blink** | LED flashes rapidly (20Hz) |
+| 4 | **Fast Blink** | LED flashes rapidly |
 
 ---
 ---
